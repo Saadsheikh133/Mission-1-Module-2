@@ -14,8 +14,19 @@ const fruits = ['Banana', 'apple', 'Orange', 'date'];
 const arr = [4, 5, 7, 34, 67, [23, 35, 7, [62, 89, 23, [54, 6, 75, [34, 4]]]]];
 //* ignore nested array problem
 
-const flatArr = arr.flat(Infinity)
+const flatArr = arr.flat(Infinity);
 
-console.log(flatArr)
+
+//*ignore duplication problem
+
+const tagsFromPosts = [
+    ['javascript', 'react', 'css'],
+    ['node', 'express'],
+    ['html', 'css', 'react']
+];
+
+const filterTags = [...new Set(tagsFromPosts.flat())];
+
+console.log(filterTags)
 
 
