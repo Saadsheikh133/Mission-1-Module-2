@@ -27,6 +27,5 @@ const tagsFromPosts = [
 
 const filterTags = [...new Set(tagsFromPosts.flat())];
 
-console.log(filterTags)
 
 
